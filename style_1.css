@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;  
+}
+.main{
+  height: 100vh;   
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+.block{
+  background-color: rgb(247, 241, 241);
+  height: 300px;
+  width: 430px;
+  border-radius: 7px; 
+}
+#quote{
+  width: 80%;
+  height: 40%;
+  margin: 8px 8px 8px 30px;
+  padding: 15px;
+  font-family: 'Redressed', cursive;
+  font-size: 1.4em;
+  transition-property: color;
+  transition-duration: 3s;
+}
+.authorStyles{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Yellowtail', cursive;
+  font-size: 1.2em;
+}
+#author{
+  height: 10%;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 3px;
+  transition-property: color;
+  transition-duration: 3s;
+}
+
+.elements{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.twitter{
+  width:auto;
+  height: 17%;
+  margin: 2px;
+  padding: 2px 0 2px 0;
+}
+#button{
+  height: 45px;
+  width: 15%;
+  margin: 0;
+  padding: 0;
+  background: tomato url(arrow_right.svg);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+#language:active{
+    background:rgb(32 232 149);
+	color: red;
+	border: none;
+}
+#language:focus{
+    background:rgb(32 232 149);
+	color: red;
+	border: none;
+}
+#button:focus {
+  outline: 0; 
+}
+@media (max-width: 1200px) {
+  .block{
+    max-width: 430px;
+  }
+}
+@media (max-width: 230px) {
+  .text1 {
+      font-size: 1em;
+      padding: 15%;
+      width: 70%;
+      margin: 0 5px 0 5px;
+  }
+  #button {
+      height: 24px;
+  }
+  img {
+    width: 1em;
+    height: 1em;
+  }
+  .block{
+    height: 300px;
+    width: 90%;
+    
+  }
+}

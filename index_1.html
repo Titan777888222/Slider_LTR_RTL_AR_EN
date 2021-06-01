@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote generator</title>
+    <link rel="stylesheet" href="style_1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <button
+        type="button"
+        id="language"
+        onclick="convertToEn()"
+        style="margin-bottom: 500px"
+      >
+        EN
+      </button>
+      <button
+        type="button"
+        id="language"
+        onclick="convertToAr()"
+        style="margin-bottom: 500px"
+      >
+        AR
+      </button>
+
+      <div class="block">
+        <p id="quote">
+          Wait a minute, we need some time to process your request ! Click on
+          the button!
+        </p>
+        <div class="authorStyles"><p id="author">Author !</p></div>
+        <div class="elements">
+          <div class="twitter">
+            <a href="https://twitter.com"
+              ><img src="twitter_icon.svg" width="35" height="35" alt=""
+            /></a>
+          </div>
+          <button id="button"></button>
+          
+        </div>
+      </div>
+    </div>
+    <script src="script_1.js"></script>
+  </body>
+</html>
